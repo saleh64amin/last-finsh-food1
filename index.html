@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <h1>حاسبة احتياجك الغذائي</h1>
+
+    <div class="container">
+        <form id="calorie-form">
+          <div class="form-group">
+            <label for="weight">الوزن (كجم):</label>
+            <input type="number" id="weight" placeholder="أدخل وزنك" required>
+          </div>
+          <div class="form-group">
+            <label for="height">الطول (سم):</label>
+            <input type="number" id="height" placeholder="أدخل طولك" required>
+          </div>
+          <div class="form-group">
+            <label for="age">العمر (سنة):</label>
+            <input type="number" id="age" placeholder="أدخل عمرك" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">الجنس:</label>
+            <select id="gender" required>
+              <option value="male">ذكر</option>
+              <option value="female">أنثى</option>
+              <option value="brgnet1">حامل في ثلث الاول</option>
+              <option value="brgnet2">حامل في ثلث الثاني</option>
+              <option value="brgnet3">حامل في ثلث الثالث</option>
+              <option value="bebe1-3">1-3رضيع  </option>
+              <option value="bebe4-5"> رضيع 4-5</option>
+              <option value="bebe6-8">6-8 رضيع</option>
+              <option value="bebe6-8!">6-8 رضيع نشيط</option>
+              <option value="bebe9-18">9-18 رضيع</option>
+              <option value="bebe9-18!">9-18 رضيع نشيط</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="activity-level">مستوى النشاط:</label>
+            <select id="activity-level" required>
+              <option value="1">اطفال اقل من18 </option>
+
+              <option value="1.2">قليل النشاط</option>
+              <option value="1.375">نشاط خفيف</option>
+              <option value="1.55">نشاط متوسط</option>
+              <option value="1.725">نشاط عالي</option>
+              <option value="1.9">نشاط مكثف</option>
+            </select>
+
+
+            <main>
+              <input type="number" id="protein-input" step="0.01" placeholder="نسبة البروتين (مثلاً: 0.30)" required>
+    <input type="number" id="fat-input" step="0.01" placeholder="نسبة الدهون (مثلاً: 0.25)" required>
+        <!-- <input type="number" id="carbs-input" step="0.1" placeholder="نسبة الكربوهيدرات (مثلاً: 0.45)" required> -->
+
+            </main>
+
+            <section>
+              <input type="number" id="dairy-servings" placeholder="عدد حصص الألبان" required>
+    <input type="number" id="vegetable-servings" placeholder="عدد حصص الخضار" required>
+    <!-- <input type="number" id="bread-servings" placeholder="عدد حصص الخبز" required> -->
+    <input type="number" id="fruit-servings" placeholder="عدد حصص الفاكهة" required>
+
+            </section>
+          </div>
+
+
+
+
+
+          
+          <button type="submit" class="calculate-btn">احسب احتياجك</button>
+        </form>
+        <div>
+            <p id="ss"></p>
+        </div>
+        <div id="results">
+          <h2>نتائجك:</h2>
+          
+          <p id="calories-result"></p>
+          <p id="macros-result"></p>
+         
+          <p id="bdel"></p>
+         
+        </div>
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
